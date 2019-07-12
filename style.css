@@ -1,0 +1,586 @@
+/*
+Theme Name: Pfadfinder Rott
+Theme URI: http://pfadfinder-rott.de
+Description: Dieses Theme wurde für die Internetseite der Rotter Pfadfinder entwickelt.
+Version: 1.0
+Author: Simon Ellmann
+Author URI: 
+Tags: scouts
+*/
+
+@import "css/reset.css";
+@import "css/layout.css";
+
+html {
+	/*background-color:#CCCCCC;*/
+	margin-top:40px;
+	font-family:'Helvetica Neue', 'Arial', sans-serif;
+}
+
+body {
+	width:980px;
+	height:auto;
+	margin:auto;
+}
+
+#bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+}
+
+.logged-in {
+	margin-top:12px;
+}
+
+a {
+	text-decoration:none;
+	color:#C00;
+}
+
+h3 {
+	font-size:18px;
+	padding-bottom:10px;
+}
+
+p em {
+	font-style:italic;
+}
+
+header {
+	float:left;
+	width:220px;
+	height:auto;
+	position:fixed;
+	margin:0px 0px 0px 20px;
+	font-size:14px;
+}
+
+header .headerpicture {
+	width:220px;
+	height:121px;
+	background-image:url(./images/logo.png);
+	background-repeat:no-repeat;
+}
+
+.rott {
+	margin-left:286px;
+	width:670px;
+	height:110px;
+	background-image:url(./images/rott.png);
+	background-position: 30px 0px;
+	background-repeat:no-repeat;
+}
+
+header .tipi {
+	font-size:18px;
+	padding-left:40px;
+}
+
+article header {
+	width:610px;
+	position:relative;
+	margin:0px 0px 0px 0px;
+}
+
+article {
+	position:relative;
+}
+
+header hr {
+	border:1px;
+	background-color:#666666;
+	height:1px;
+	width:200px;
+	margin:20px 0px 20px 0px;
+	padding:0px;
+	clear:left;
+}
+
+article footer a {
+	color:#000;
+}
+
+header #menu ul {
+	padding-left:23px;
+	list-style:none;
+	width:150px;
+}
+
+header #menu ul li {
+	float:left;
+	margin:2px;
+	height:37px;
+	width:145px;
+	list-style:none;
+	background-repeat:no-repeat;
+	background-color:#474747;
+	transition: background-color 0.4s;
+	-moz-transition: background-color 0.4s; /* Firefox 4 */
+	-webkit-transition: background-color 0.4s; /* Safari and Chrome */
+	-o-transition: background-color 0.4s; /* Opera */
+	border-radius:5px;
+}
+
+#menu #menu-item-43:hover {
+	background-color:#FFE000;
+}
+
+#menu #menu-item-41:hover, #menu #menu-item-36:hover {
+	background-color:#FF9933;
+}
+
+#menu #menu-item-37:hover {
+	background-color:#0066CC;
+}
+
+#menu #menu-item-960:hover {
+	background-color:#006633;
+}
+
+#menu #menu-item-39:hover, #menu #menu-item-40:hover {
+	background-color:#DD3333;
+}
+
+#menu #menu-item-2297:hover {
+	background-color:#EDDA74;
+}
+
+header #menu ul li a {
+	display: block;
+	text-decoration: none;
+	text-indent: 40px;
+	height: 37px;
+	background-repeat: no-repeat;
+	color: white;
+	padding-top: 10px;
+	font-family: Arial;
+	font-size: 15px;
+}
+
+header #menu #menu-item-44 {background-image:url(./images/menu/home.png); background-position: 6px 6px;}
+header #menu #menu-item-42 {background-image:url(./images/menu/bilder.png); background-position: 5px 10px;}
+header #menu #menu-item-35 {background-image:url(./images/menu/about.png); background-position: 9px 1px;}
+header #menu #menu-item-38 {background-image:url(./images/menu/kalender.png); background-position: 5px 8px;}
+header #menu #menu-item-43 {background-image:url(./images/menu/biber.png); background-position: 0px 10px;}
+header #menu #menu-item-41 {background-image:url(./images/menu/krokodil.png); background-position: 4px 6px;}
+header #menu #menu-item-37 {background-image:url(./images/menu/kojoten.png); background-position: 4px 5px;}
+header #menu #menu-item-960 {background-image:url(./images/menu/adler.png); background-position: 5px 3px;}
+header #menu #menu-item-40 {background-image:url(./images/menu/mammut.png); background-position: 3px 6px;}
+header #menu #menu-item-2297 {background-image:url(./images/menu/leiter.png); background-position: 15px 5px;}
+header #menu #menu-item-2297 {margin-bottom:25px;}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	header .headerpicture {background-image:url(./images/logo2x.png); background-size: 220px 121px;}
+	article, body .search {background-image:url(./images/friend2x.png); background-size: 60px 30px;}
+	header #menu #menu-item-44 {background-image:url(./images/menu/home2x.png); background-size: 26px 24px; background-position: 6px 6px;}
+	header #menu #menu-item-42 {background-image:url(./images/menu/bilder2x.png); background-size: 26px 17px; background-position: 5px 10px;}
+	header #menu #menu-item-35 {background-image:url(./images/menu/about2x.png); background-size: 19px 41px; background-position: 9px 1px;}
+	header #menu #menu-item-38 {background-image:url(./images/menu/kalender2x.png); background-size: 27px 22px; background-position: 5px 8px;}
+	header #menu #menu-item-43 {background-image:url(./images/menu/biber2x.png); background-size: 36px 25px; background-position: 0px 10px;}
+	header #menu #menu-item-41 {background-image:url(./images/menu/krokodil2x.png); background-size: 33px 28px; background-position: 4px 6px;}
+	header #menu #menu-item-37 {background-image:url(./images/menu/kojoten2x.png); background-size: 33px 29px; background-position: 4px 5px;}
+	header #menu #menu-item-960 {background-image:url(./images/menu/adler2x.png); background-size: 29px 32px; background-position: 5px 3px;}
+	header #menu #menu-item-40 {background-image:url(./images/menu/mammut2x.png); background-size: 33px 24px; background-position: 3px 6px;}
+	header #menu #menu-item-2297 {background-image:url(./images/menu/leiter.png); background-size: 11px 28px; background-position: 15px 5px;}
+	header #menu #menu-item-2297 {margin-bottom:25px;}
+}
+
+aside ul li {
+	width:200px;
+	text-align:justify;
+	font-size:18px;
+}
+
+article, body .search {
+	width:610px;
+	height:auto;
+	padding:25px 30px 0px 30px;
+	background-color:#FFFFFF;
+	background-image:url(./images/friend.png);
+	background-position:610px 45px;
+	background-repeat:no-repeat;
+	margin-left:286px;
+	margin-bottom:40px;
+	-moz-box-shadow: 0px 0px 1px #000; /* FF3.5+ */
+	-webkit-box-shadow: 0px 0px 1px #000;/*Saf3+, Chr*/
+	box-shadow: 0px 0px 1px #000; /*Op10.5, IE 9, FF4*/
+}
+
+article blockquote p {
+	font-style:oblique;
+}
+
+.single-post .social {
+	position:fixed;
+	right:0px;
+	padding-top:93px;
+	display:none;
+}
+
+.social div {
+	height:36px;
+	width:36px;
+	background-repeat:no-repeat;
+	background-image:url(./images/social.png);
+	background-color:#474747;
+	margin-bottom:5px;
+	transition: background-color 0.4s;
+	-moz-transition: background-color 0.4s; /* Firefox 4 */
+	-webkit-transition: background-color 0.4s; /* Safari and Chrome */
+	-o-transition: background-color 0.4s; /* Opera */
+}
+
+.social #twitter {
+	background-position: 0px -92px;
+}
+
+.social #twitter:hover {
+	background-color:#00aced;
+}
+
+.social #facebook {
+	background-position: 0px 0px;
+}
+
+.social #facebook:hover {
+	background-color:#3b5998;
+}
+
+.social #googleplus {
+	background-position: 0px -46px;
+}
+
+.social #googleplus:hover {
+	background-color:#cf4429;
+}
+
+.the_author .author_picture {
+	float:left;
+	padding-right:20px;
+	padding-bottom:20px;
+	height:100%;
+}
+
+.author_picture img {
+	max-width:80px;
+}
+
+.the_author .author_description {
+	float:right;
+	width:510px;
+	line-height:21px;
+	text-align:justify;
+}
+
+.the_author p {
+	font-size:18px;
+	padding-bottom:30px;
+}
+
+.author_description p {
+	padding-bottom:1em;
+}
+
+article header .article-meta {
+	color:#888888;
+	width:610px;
+	margin:0px;
+}
+
+article header .article-meta .header-link {
+	color:#C00;
+	text-decoration:none;
+}
+
+article img {
+	max-width:610px;
+}
+
+article header .article-meta a {
+	color:#000;
+	text-decoration:none;
+}
+
+article header .article-meta .post-edit-link {
+	width:100%;
+	color:#C00;
+	text-align:right;
+}
+
+article header p .comma {
+	color:#000;
+}
+
+.the_author h2, article h2, .search h1, .search h2, .widgets h2, article h2 a {
+	color:#000;
+	width:550px;
+	margin: 15px 0px 15px 0px;
+	font-size:24px;
+}
+
+.search h1, .search .search h2 {
+	margin-top:30px;
+}
+
+.widgets h2 {
+	float:left;
+	width:400px;
+}
+
+.widgets .edit {
+	float:right;
+	width:auto;
+	margin-top:15px;
+	font-size: 14px;
+}
+
+body .search .page {
+	height:90px;
+}
+
+article .content p, .page .search, .search .search, .error404 .search {
+	padding-top:10px;
+	font-size:21px;
+	line-height:24px;
+	text-align:justify;
+	min-height:1px;
+}
+
+article .content ul {
+	padding:10px 0px 0px 30px;
+	list-style-type:disc;
+}
+
+article .content ul li {
+	line-height:24px;
+}
+
+.search .search p, .search .search form {
+	font-size:18px;
+	line-height:21px;
+}
+
+article .container {
+	margin-left:-16px;
+}
+
+article .picture {
+	float:left;
+	width:140px;
+	height:140px;
+	margin-left:16px;
+	margin-bottom:16px;
+	overflow:hidden;
+}
+
+p strong {
+	font-weight:bold;
+}
+
+.single-post article .content p {
+	font-size:18px;
+}
+
+#menu {
+}
+
+footer {
+	text-align:center;
+	padding-bottom:30px;
+	min-height:1px;
+	font-size:16px;
+}
+
+article footer {
+	text-align:left;
+	padding-top:10px;
+	font-size:14px;
+	color:#888888;
+	clear:both;
+}
+
+article .top {
+	font-weight:bold;
+}
+
+article .termin {
+	line-height:16px;
+	float:left;
+	height:20px;
+	margin-top:15px;
+	font-size:13px;
+}
+
+article .legend {
+	float: left;
+	padding-left: 20px;
+	padding-right: 5px;
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
+article .tlevel {
+	width:70px;
+}
+
+article .tdate {
+	width:150px;
+}
+
+article .ttime {
+	width:95px;
+}
+
+article .ttitle {
+	width:200px;
+}
+
+article .tsection {
+	width:92px;
+}
+
+article .tcategory {
+	float:right;
+	text-align:right;
+	width:70px;
+}
+
+article .year {
+	margin-top: 10px;
+	background-color: orange;
+}
+
+article .year .termin {
+	margin-top: 4px;
+	height: 18px;
+}
+
+footer .footer a {
+	color:#000000;
+	text-decoration:none;
+}
+
+footer .footer {
+	color:#000000;
+}
+
+.comments, .widgets, .right nav, .white, .the_author {
+	width:610px;
+	height:auto;
+	padding:25px 30px 0px 30px;
+	background-color:#FFFFFF;
+	background-image:none;
+	margin-left:286px;
+	margin-bottom:40px;
+	-moz-box-shadow: 0px 0px 1px #000; /* FF3.5+ */
+	-webkit-box-shadow: 0px 0px 1px #000;/*Saf3+, Chr*/
+	box-shadow: 0px 0px 1px #000; /*Op10.5, IE 9, FF4*/
+}
+
+.back-to-top {
+	width:610px;
+	height:auto;
+	padding:0px 30px 0px 30px;
+	margin-left:286px;
+	margin-bottom:40px;
+}
+
+.right nav div {
+	margin-bottom:25px;
+}
+
+.widgets {
+	font-size:18px;
+}
+
+#four h3 {
+	font-size:16px;
+	font-weight:bold;
+	margin-top:16px;
+}
+
+#four p {
+	font-size:16px;
+}
+
+#four {
+	display:block;
+}
+
+article .content #four ul {
+	padding-left:0px;
+}
+
+article .content #four ul li {
+	list-style-type:none;
+}
+
+.widgets div {
+	width:183px;
+	text-align:justify;
+}
+
+.widgets #one, .widgets #two, .widgets .leftcolumn, .widgets .centercolumn {
+	float:left;
+	padding-right:30px;
+}
+
+.widgets #three, .widgets #six, .widgets .rightcolumn {
+	float:right;
+}
+
+.widgets #six img, .widgets .rightcolumn img {
+	max-width:183px;
+}
+
+.leftcolumn, .centercolumn, .rightcolumn, #one, #two, #three, #six {
+	padding-bottom:35px;
+}
+
+body .search form div {
+	padding-top:20px;
+	padding-bottom:25px;
+}
+
+.comments article {
+	margin:20px 0px 20px 0px;
+	padding:0px;
+}
+
+.comments .comment-time {
+	margin:0px;
+	padding:0px 0px 0px 20px;
+}
+
+.comments .url {
+	padding:0px 0px 0px 00px;
+}
+
+.comments article img {
+	float:left;
+	padding:0px;
+	margin:0px;
+}
+
+.elevator {
+    text-align: center;
+    cursor: pointer;
+    width: 140px;
+    margin: auto;
+}
+
+.elevator:hover {
+    opacity: 0.7;
+}
+
+.elevator svg {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}
