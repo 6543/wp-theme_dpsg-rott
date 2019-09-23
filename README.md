@@ -1,5 +1,7 @@
 Starkers HTML5
 ==============
+
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/gpl-2.0)
  
 Just like [Elliot Jay Stocks'](http://elliotjaystocks.com) original version of ['Starkers'](http://starkerstheme.com) this theme is based on the current WordPress default - 'TwentyTen'.
  
